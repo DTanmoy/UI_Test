@@ -1,0 +1,352 @@
+* {
+  padding: 0%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: #464646;
+}
+
+header::after {
+  content: "";
+  background: url("../assets/cornerImg.svg") no-repeat;
+  width: 200px;
+  height: 106px;
+  position: absolute;
+  top: -13px;
+  z-index: 1;
+}
+
+header .header-text {
+  padding: 50px;
+  z-index: 11;
+  top: 20px;
+}
+
+header .header-text .main-text {
+  display: inline-block;
+}
+
+header .header-text .main-text hr {
+  border: 2px solid #EB8C00;
+  margin: 0;
+  width: 46%;
+}
+
+header .header-text .main-text h3 {
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+header .header-text p {
+  color: #FFFFFF;
+  font: normal normal normal 15px/22px Arial;
+}
+
+header .header-text .c-btn {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header .header-text .success {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+header .header-text .success:hover {
+  background-color: #FFFFFF;
+  color: #2D2D2D;
+}
+
+header .img-container {
+  padding-right: 0 50px 0 50px;
+}
+
+header .text-container {
+  padding-left: 0;
+}
+
+section .container-fluid {
+  padding: 0 50px;
+}
+
+section .has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+section .has-search .search {
+  background-color: #F2F2F2;
+  color: #0000002B;
+  font: normal Helvetica Neue;
+}
+
+section .has-search span {
+  font-size: 12px/16px;
+}
+
+section .has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #000000;
+}
+
+section .filter-location .input-group {
+  display: block;
+}
+
+section .filter-location .input-group .form-control {
+  width: 100%;
+}
+
+section .r-btn {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #000000;
+  padding: 4px 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+section .reset {
+  border-color: #D04A02;
+  color: #D04A02;
+}
+
+section .reset:hover {
+  background-color: #D04A02;
+  color: #FFFFFF;
+}
+
+section .input-group > .custom-select:not(:first-child),
+section .input-group > .form-control:not(:first-child) {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  background-color: #F2F2F2;
+  color: #BDBDBD;
+  font: normal normal normal 12px/16px Helvetica Neue;
+}
+
+section label {
+  font: normal normal normal 12px/16px Helvetica Neue;
+  color: #2D2D2D;
+}
+
+section .f-label {
+  font: normal normal medium 14px/16px Helvetica Neue;
+  color: #2D2D2D;
+}
+
+.card {
+  border: 0px !important;
+}
+
+.accordion .content-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.accordion .content-box .label {
+  position: relative;
+  background: #F2F2F2;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.accordion .content-box .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.accordion .content-box .profile-details {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordion .content-box.active .profile-details {
+  height: 375px;
+}
+
+.accordion .content-box.active .label::before {
+  content: '-';
+}
+
+.profile-details .profile-img > img {
+  max-width: 102px;
+}
+
+.profile-details .card-body.card-main {
+  padding: 1em;
+}
+
+.profile-details .profile-detail {
+  padding-left: 1em;
+}
+
+.profile-details .profile-detail .profile-name {
+  font: normal normal bold 12px/18px Helvetica Neue;
+  color: #000000;
+  margin-bottom: -.2rem;
+}
+
+.profile-details .profile-detail .account-role {
+  font: normal normal medium 12px/18px Helvetica Neue;
+  color: #000000;
+  margin-bottom: .3rem;
+}
+
+.profile-details .profile-detail .role-details {
+  font: normal normal normal 12px/16px Helvetica Neue;
+  margin-bottom: .5rem;
+}
+
+.profile-details .profile-detail .c-btn {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #000000;
+  padding: 4px 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.profile-details .profile-detail .contact {
+  border-color: #D04A02;
+  color: #D04A02;
+}
+
+.profile-details .profile-detail .contact:hover {
+  background-color: #D04A02;
+  color: #FFFFFF;
+}
+
+.card-header {
+  border-bottom: 0px !important;
+  padding: 0px !important;
+}
+
+.card-header button {
+  text-align: left;
+  color: black;
+  background-color: #F2F2F2;
+}
+
+.card-header button i {
+  float: right;
+}
+
+.card-header button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card-header button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card-detail {
+  -webkit-box-shadow: 0px 2px 3px #0000002B;
+          box-shadow: 0px 2px 3px #0000002B;
+  padding: 1em;
+}
+
+.card-body.card-main {
+  padding: 1em;
+}
+
+.profile-detail > label {
+  margin-bottom: 0;
+}
+
+.dropdown-menu {
+  -webkit-box-shadow: 0px 2px 3px #0000002B;
+          box-shadow: 0px 2px 3px #0000002B;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+.btn-light {
+  color: #BDBDBD;
+  background-color: #F2F2F2;
+  border-color: #BDBDBD;
+  font: normal normal normal 12px/16px Helvetica Neue;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  border-color: #EB8C00;
+  background-color: #FFFFFF;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #D04A02;
+}
+
+@media (max-width: 576px) {
+  .header-text {
+    text-align: center;
+    top: 45px !important;
+    margin-bottom: 40px;
+  }
+  .header-text .main-text {
+    display: inline-block;
+  }
+  .header-text .main-text hr {
+    border: 2px solid #EB8C00;
+    margin: 0;
+    width: 46%;
+  }
+  .header-text .main-text h3 {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+  .reset-btn {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reset-btn {
+    text-align: center;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .r-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .r-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
